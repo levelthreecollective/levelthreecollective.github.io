@@ -62,9 +62,14 @@ nav {
 nav ul {
     display: flex;
     justify-content: right;
-    list-style: none;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0px;
+}
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
 }
 nav ul li {
     display: inline;
