@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIII+DJS</title>
+    <title>LIII+GALLERY</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
-    <link rel="manifest" href="../favicons/site.webmanifest">
+    <link rel="manifest" href="../../favicons/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="background-video">
+            <source src="../../media/home_page_video.mov" type="video/mp4">
+        </video>
+    </div>
+    <div class="color-overlay"></div>
 
 </head>
 <body>
@@ -19,8 +25,6 @@
         <!-- Event images will be loaded here dynamically -->
     </div>
     <!-- Add navigation back to the main gallery or home page -->
-    <script src="event-data.js"></script>
-    <script src="../load-event.js"></script>
 
     <header>
         <!-- Header content -->
@@ -35,9 +39,12 @@
     </nav>
 
     <main>
-        <!-- Main content of your webpage -->
-        <h1>Title of Event</h1>
-        <p>Description of Event</p>
+        <script type="module" src="../load_event.js"></script>
+        <section class="gallery">
+            <div class="flyer-gallery"></div>
+            <script type="module" src="./event_data.js"></script>
+        </section>
+        
     </main>
 
     <footer>
