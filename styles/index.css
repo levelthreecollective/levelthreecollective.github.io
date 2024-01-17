@@ -21,8 +21,18 @@ body, html {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1; /* Place the video under the content */
+    z-index: -2; /* Place the video under the content */
     overflow: hidden;
+}
+.color-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;  /* Width of the colored square */
+    height: 100%; /* Height of the colored square */
+    z-index: -1;
+    background-color: rgba(50, 95, 60, .90); /* Example: semi-transparent red */
+    transform: translate(-50%, -50%); /* Centering adjustment */
 }
 
 video {
@@ -154,6 +164,7 @@ footer p {
     width: 100%; /* Ensures the header takes full width of its container */
     margin: 0 auto; /* Centers the header block and removes default margin */
     padding: 10px 0; /* Optional: Adds some spacing above and below the header */
+    padding-top: 30px;
 }
 .flyer-gallery {
     display: flex;
@@ -171,7 +182,6 @@ footer p {
     text-align: center; /* Centers the text horizontally */
     font-size: large;
     margin: 0 auto; /* Centers the header block and removes default margin */
-    padding: 0px 0; /* Optional: Adds some spacing above and below the header */
 }
 /* Grid layout for larger screens */
 @media screen and (min-width: 600px) {
