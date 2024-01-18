@@ -1,9 +1,12 @@
 export const eventData = {
     "ludlow": {
+        id: "ludlow",
         archive: true,
         title: "Sound Session",
-        id: "ludlow",
+        location: "Ludlow House",
+        date: "5th January 2024",
         flyerSrc: "flyers/ludlow_house.jpeg",
+        caption: "Join us for this event...",
         images: [
             "ludlow/1.jpg",
             "ludlow/2.jpg",
@@ -21,11 +24,14 @@ export const eventData = {
             // More images
         ]
     },
-    "its_too_loud": {
+    "its+too+loud": {
         archive: true,
         title: "It's Too Loud!",
-        id: "its_too_loud",
+        location: "Bogart House",
+        date: "28th January 2023",
+        id: "its+too+loud",
         flyerSrc: "flyers/its_too_loud.jpeg",
+        caption: "Join us for this event...",
         images: [
             "too_loud/1.jpg",
             "too_loud/2.jpg",
@@ -42,11 +48,14 @@ export const eventData = {
             // More images
         ]
     },
-    "open_the_garage": {
+    "open+the+garage": {
         archive: true,
         title: "Open the Garage!",
-        id: "open_the_garage",
+        location: "Lume Studios",
+        date: "4th March 2023",
+        id: "open+the+garage",
         flyerSrc: "flyers/lume_green.jpeg",
+        caption: "Join us for this event...",
         images: [
             "open_garage/1.jpg",
             "open_garage/2.jpg",
@@ -63,8 +72,11 @@ export const eventData = {
     "convocation": {
         archive: true,
         title: "CONVOCATION",
+        location: "Kind Regards",
+        date: "16th June 2023",
         id: "convocation",
         flyerSrc: "flyers/kind_regards.jpeg",
+        caption: "Join us for this event...",
         images: [
             "convocation/1.jpg",
             "convocation/2.jpg",

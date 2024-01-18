@@ -77,25 +77,12 @@ main h2 a {
     text-align: center;
 }
 main h2 a:hover{
-    color: #006636ba;
-}
-main p{
-    padding: 20px;
-    max-width: 70%;
-    text-align: center;
-    overflow: auto;
+    color: #333;
 }
 
-.email-link {
-    font-size: xx-large;
-    color: #f9f9f9;
-    text-decoration: none;
-    font-weight: bold;
-}
-.email-link:hover {
-    color: #006636ba;
-}
 
+
+/* NAVIGATION */
 nav {
     padding: 10px;
     padding-bottom: 10px;
@@ -123,18 +110,19 @@ nav ul li a {
     font-weight: bold;
 }
 nav ul li a:hover {
-    color: #006636ba;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
 }
 
-
+/* FOOTER */
 footer {
-    padding: 10px 0;
     text-align: center;
+    
 }
 .social-media-links {
-    margin-bottom: 2px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .social-media-links a {
     text-decoration: none;
@@ -143,29 +131,35 @@ footer {
     font-size: 16px; /* Adjust the size as needed */
 }
 .social-media-links a:hover {
-    color: #006636ba; /* Change hover color as needed */
+    color: #333; /* Change hover color as needed */
 }
 footer p {
     color: #333;
     font-size: 12px;
+    padding-top: 3px;
 }
 
-/* Flyer gallery */
-.gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-height: 100%;
-    overflow:inherit;
+
+/* ABOUT */
+.about {
+    padding-top: 20px;
+    max-width: 80%;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    text-align: justify;
 }
-.gallery h2 {
-    text-align: center; /* Centers the text horizontally */
-    font-size: xx-large;
-    width: 100%; /* Ensures the header takes full width of its container */
-    margin: 0 auto; /* Centers the header block and removes default margin */
-    padding: 10px 0; /* Optional: Adds some spacing above and below the header */
-    padding-top: 30px;
+
+/* RELEASES */
+.releases {
+    padding-top: 10px;
+    max-width: 80%;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    text-align: center;
 }
+
+/* EVENTS */
+
 .flyer-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -178,12 +172,6 @@ footer p {
     max-width: 300px; /* Maximum image width */
     height: auto; /* Maintain aspect ratio */
 }
-.gallery h3 {
-    text-align: center; /* Centers the text horizontally */
-    font-size: large;
-    margin: 0 auto; /* Centers the header block and removes default margin */
-}
-/* Grid layout for larger screens */
 @media screen and (min-width: 600px) {
     .flyer-gallery {
         flex-wrap: wrap;
@@ -194,16 +182,128 @@ footer p {
         max-width: 400px;
     }
 }
+.flyer-gallery h3 {
+    text-align: center; /* Centers the text horizontally */
+    font-size: large;
+    margin: 0 auto; /* Centers the header block and removes default margin */
+}
+.flyer-gallery h2 {
+    text-align: center; /* Centers the text horizontally */
+    font-size: xx-large;
+    width: 100%; /* Ensures the header takes full width of its container */
+    margin: 0 auto; /* Centers the header block and removes default margin */
+    padding: 10px 0; /* Optional: Adds some spacing above and below the header */
+    padding-top: 30px;
+}
 
+
+/* Base Styles for Gallery */
+.gallery {
+    margin-bottom: 15px; /* Space below the gallery */
+    padding: 0 15px; /* Adds padding to the left and right */
+    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+}
+.gallery img {
+    width: 100%; /* Images take full width of their container */
+    height: auto; /* Height adjusts to maintain aspect ratio */
+    display: block; /* Removes extra space below images */
+    margin-bottom: 0px; /* Adds space below each image */
+}
+.gallery h2 {
+    text-align: center;
+    width: 100%;
+    font-size: xx-large;
+    margin: 0 auto;
+    padding: 0px;
+    padding-bottom: 5px;
+    column-span: all; /* Ensures the text spans all columns */
+}
+.gallery p {
+    text-align: center;
+    font-size: large;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    padding-bottom: 15px;
+    column-span: all; /* Ensures the text spans all columns */
+}
+
+.gallery p.caption {
+    text-align: justify;
+    max-width: 80%;
+}
+
+/* Masonry Layout for Smaller Screens */
+@media screen and (max-width: 599px) {
+    .gallery {
+        column-count: 2; /* Two columns on smaller screens */
+        column-gap: 0px;
+    }
+    
+    .gallery img {
+        break-inside: avoid; /* Prevents images from being split across columns */
+        width: 100%;
+    }
+
+    .gallery.lone-image-container img.lone-image {
+        column-span: all; /* Makes the image span all columns */
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+        max-width: 80%; /* Adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+/* Grid Layout for Larger Screens */
+@media screen and (min-width: 600px) {
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Adjusts the alignment of items */
+    }
+    .gallery img {
+        break-inside: avoid; /* Prevents images from being split across columns */
+        width: 80%;
+    }
+    .gallery .lone-image {
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+        max-width: 100%; /* Adjust as needed, e.g., 80% to make it smaller */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+
+
+
+/* RADIO */
+.radio h2, p {
+    padding: 20px;
+}
 
 .logo-container {
     display: flex;
     justify-content: center; /* Center logos horizontally */
     align-items: center; /* Align logos vertically in the center */
-    padding-top: 30px;
-    gap: 20px; /* Space between logos */
+    padding: 10px;
+    gap: 30px; /* Space between logos */
+    display: flex;
+    flex-wrap: wrap; 
 }
 .logo {
     max-width: 100px; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
+}
+
+
+
+/* CONTACT */
+.email-link {
+    font-size: xx-large;
+    color: #f9f9f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+.email-link:hover {
+    color: #333;
 }
