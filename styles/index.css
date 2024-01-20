@@ -25,7 +25,7 @@ body, html {
     overflow: hidden;
 }
 .color-overlay {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     width: 100%;  /* Width of the colored square */
@@ -33,7 +33,7 @@ body, html {
     z-index: -1;
     background-color: rgba(50, 95, 60, .90); /* Example: semi-transparent red */
     transform: translate(-50%, -50%); /* Centering adjustment */
-    overflow: hidden;
+    overflow: scroll;
 }
 
 video {
@@ -54,6 +54,7 @@ body {
     margin: 0;
     font-family: 'Roboto Mono', monospace;
     padding-left: 0;
+    overflow: scroll;
 }
 
 main {
