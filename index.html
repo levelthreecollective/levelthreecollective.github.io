@@ -17,12 +17,14 @@
 
 </head>
 <body>
-
+    <script src="media/random_image.js"></script>
     <div class="video-background">
-        <video autoplay muted loop playsinline id="background-video">
+        <img src="media/LIII_logo.png" alt="Fallback Image" id="fallbackImage" style="display: none;">
+        <video autoplay muted loop playsinline id="background-video" oncanplaythrough="videoCanPlay()">
             <source src="../media/home_page_video.mov" type="video/mp4">
         </video>
     </div>
+    <script src="media/background.js"></script>
 
     <header>
         <!-- Header content -->
