@@ -139,7 +139,6 @@ footer p {
 
 /* ABOUT */
 .about {
-    max-width: 85%;
     line-height: 1.5;
     overflow: auto;
 }
@@ -148,21 +147,21 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     font-size: xx-large;
+    width: 50%;
 }
 .about p {
     text-align: justify;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
-.about img {
-    width: 100%;
-}
-@media screen and (min-width: 600px) {
-    .about {
-        max-width: 50%;
-    }
+@media screen and (max-width: 600px) {
     .about h1 {
+        width: 85%;
         padding-bottom: 20px;
     }
     .about p {
+        width: 85%;
         padding-bottom: 40px;
     }
 }
@@ -198,16 +197,6 @@ footer p {
     max-width: 300px; /* Maximum image width */
     height: auto; /* Maintain aspect ratio */
 }
-@media screen and (min-width: 600px) {
-    .flyer-gallery {
-        flex-wrap: wrap;
-    }
-
-    .flyer-gallery img {
-        flex: 1 0 calc(33.33333% - 20px); /* Three images per row, accounting for gap */
-        max-width: 400px;
-    }
-}
 .flyer-gallery h3 {
     text-align: center; /* Centers the text horizontally */
     font-size: large;
@@ -221,6 +210,17 @@ footer p {
     padding: 10px 0; /* Optional: Adds some spacing above and below the header */
     padding-top: 30px;
 }
+@media screen and (min-width: 600px) {
+    .flyer-gallery {
+        flex-wrap: wrap;
+    }
+
+    .flyer-gallery img {
+        flex: 1 0 calc(33.33333% - 20px); /* Three images per row, accounting for gap */
+        max-width: 400px;
+    }
+}
+
 
 
 /* Base Styles for Gallery */
@@ -264,6 +264,7 @@ footer p {
     .gallery {
         column-count: 2; /* Two columns on smaller screens */
         column-gap: 0px;
+        max-width: 100%;
     }
     
     .gallery img {
