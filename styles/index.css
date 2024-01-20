@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* 
+* {
+    border: 1px solid red;
+}
+*/
 
 body, html {
     height: 100%;
@@ -34,7 +39,6 @@ body, html {
     z-index: -1;
     background-color: #006636ba; /* Example: semi-transparent red */
     transform: translate(-50%, -50%); /* Centering adjustment */
-    overflow: scroll;
 }
 
 video {
@@ -55,7 +59,6 @@ body {
     margin: 0;
     font-family: 'Roboto Mono', monospace;
     padding-left: 0;
-    overflow: scroll;
 }
 
 main {
@@ -66,7 +69,7 @@ main {
     height: 100%;
     text-align: center; /* Align text inside the div */
     color: #f9f9f9;
-    overflow: auto;
+    overflow-y: scroll;
 }
 main h2 a {
     text-decoration: none;
@@ -141,7 +144,7 @@ footer p {
 /* ABOUT */
 .about {
     line-height: 1.5;
-    overflow: auto;
+    overflow-y: auto;
 }
 .about h1 {
     text-align: center;
@@ -230,7 +233,7 @@ footer p {
 /* Base Styles for Gallery */
 .gallery {
     margin-bottom: 10px; /* Space below the gallery */
-    padding: 0px 15px; /* Adds padding to the left and right */
+    padding: 0px 0px; /* Adds padding to the left and right */
     max-width: 100%;
     overflow-y: auto; /* Enables vertical scrolling if content overflows */
 }
@@ -267,9 +270,9 @@ footer p {
 /* Masonry Layout for Smaller Screens */
 @media screen and (max-width: 599px) {
     .gallery {
-        column-count: 2; /* Two columns on smaller screens */
+        column-count: 1; /* Two columns on smaller screens */
         column-gap: 0px;
-        max-width: 100%;
+        max-width: 80%;
     }
     
     .gallery img {
