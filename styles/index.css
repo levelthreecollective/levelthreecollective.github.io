@@ -351,33 +351,44 @@ nav ul li a:hover {
     margin: 0 10px;
 }
 
-/* GUESTS */
-.guest h1 {
+/* EPISODES */
+.episode h1 {
     text-align: center;
 }
-.guest-list {
+.episode-list {
     display: flex;
     gap: 10px;
     padding: 10px;
+    padding-top: 20px;
 }
-.guest-column {
+.episode-column {
     flex: 1;
 }
-.guest-item {
+.episode-item {
     margin-bottom: 30px;
 }
-.guest-image {
+
+.episode-image {
     width: 100%; /* Full width of the item */
     height: auto; /* Maintain aspect ratio */
 }
-.guest-item h2 {
+.episode-item h2 {
     text-align: center;
     padding-top: 7px;
     padding-bottom: 5px;
+}
+.episode-link {
+    color: #f9f9f9;
     text-decoration: wavy underline;
 }
-.guest-bio {
+.episode-link:hover {
+    text-decoration: wavy underline;
+    color: #333;
+}
+.episode-bio {
     text-align: center;
+    padding-top: 5px;
+    font-size: medium;
 }
 
 
