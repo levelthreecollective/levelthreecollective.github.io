@@ -14,20 +14,17 @@
 
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    
+    <!-- background video -->
     <div class="video-background">
         <video autoplay muted loop playsinline id="background-video">
             <source src="../../media/home_page_video.mov" type="video/mp4">
         </video>
+        <div class="color-overlay"></div>
     </div>
-    <div class="color-overlay"></div>
-
+    <!-- end background video -->
 </head>
 <body>
-
-    <div id="event-gallery" class="event-gallery">
-        <!-- Event images will be loaded here dynamically -->
-    </div>
-    <!-- Add navigation back to the main gallery or home page -->
 
     <header>
         <!-- Header content -->
@@ -42,9 +39,10 @@
     </nav>
 
     <main>
-        <script type="module" src="../load_event.js"></script>
+        <!-- Main content -->
+        <script type="module" src="../event_event.js"></script>
         <div class="gallery">
-            <script type="module" src="./event_data.js"></script>
+            <script type="module" src="./load_data.js"></script>
         </div>
     </main>
 

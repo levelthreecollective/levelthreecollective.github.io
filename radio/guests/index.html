@@ -11,15 +11,20 @@
     <link rel="manifest" href="../../favicons/site.webmanifest">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- background video -->
     <div class="video-background">
         <video autoplay muted loop playsinline id="background-video">
             <source src="../../media/levelthreesections.mov" type="video/mp4">
         </video>
+        <div class="color-overlay"></div>
     </div>
-    <div class="color-overlay"></div>
+    <!-- end background video -->
+    <script src="../../styles/sizing.js"></script>
 </head>
 <body>
 
@@ -37,11 +42,12 @@
 
     <main>
         <!-- Main content -->
-        <h1>DENNIS FREE</h1>
-        <p>Recently into techno</p>
-
-        <p>WIP</p>
-        
+        <h1 class="guest">Enter the Collective</h1>
+        <div class="guest-list">
+            <div class="guest-column" id="guestColumn1"></div>
+            <div class="guest-column" id="guestColumn2"></div>
+            <script type="module" src="load_guest.js"></script>
+        </div>
     </main>
 
     <footer>

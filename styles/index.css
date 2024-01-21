@@ -5,105 +5,95 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* 
-* {
-    border: 1px solid red;
-}
-*/
 
-body, html {
-    height: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+/* * {
+    border: 1px solid red;
+} */
+
+html, body {
+    min-height: 100%;
+}
+html {
+    min-height: 100%;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
 }
 
 .video-background {
     position: fixed;
-    right: 0;
-    bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -2; /* Place the video under the content */
-    overflow: hidden;
-}
-.video-background img {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -2; /* Place the video under the content */
-    overflow: hidden;
-}
-.color-overlay {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 100%;  /* Width of the colored square */
-    height: 100%; /* Height of the colored square */
-    z-index: -1;
-    background-color: #006636ba; /* Example: semi-transparent red */
-    transform: translate(-50%, -50%); /* Centering adjustment */
-}
-
-video {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: -2;
+    overflow: hidden;
+}
+.video-background video {
+    position: absolute;    
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This will cover the whole screen while maintaining aspect ratio */
+    z-index: -2;
+    object-fit: cover; 
 }
-
-body {
-    display: flex;
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover; 
     background-color: #006636ba;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Roboto Mono', monospace;
-    padding-left: 0;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
     height: 100%;
-    text-align: center; /* Align text inside the div */
-    color: #f9f9f9;
-    overflow-y: scroll;
-}
-main h2 a {
-    text-decoration: none;
-    color: #f9f9f9;
-    max-width: 70%;
     text-align: center;
+    color: #f9f9f9;
 }
-main h2 a:hover{
+
+/* HOME */
+.home {
+    height: 100%;
+    display: block;
+}
+
+/* FOOTER */
+footer {
+    padding: 10px;
+    text-align: center;
+    color: #f9f9f9;
+}
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media-links a {
+    text-decoration: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #f9f9f9;
+    font-size: 16px; /* Adjust the size as needed */
+}
+.social-media-links a:hover {
+    color: #333; /* Change hover color as needed */
+}
+footer p {
     color: #333;
+    padding: 3px;
+    font-size: 12px;
 }
-
-
 
 /* NAVIGATION */
 nav {
     padding: 10px;
-    padding-bottom: 10px;
 }
 nav ul {
     display: flex;
     justify-content: right;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0px;
     padding: 0px;
 }
 @media screen and (max-width: 600px) {
@@ -113,8 +103,8 @@ nav ul {
 }
 nav ul li {
     display: inline;
+    padding-left: 10px;
     text-align: right;
-    margin-left: 20px;
 }
 nav ul li a {
     color: #f9f9f9;
@@ -127,42 +117,21 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    
-}
-.social-media-links {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.social-media-links a {
-    text-decoration: none;
-    margin: 0 5px;
-    color: #f9f9f9; /* Change the color as needed */
-    font-size: 16px; /* Adjust the size as needed */
-}
-.social-media-links a:hover {
-    color: #333; /* Change hover color as needed */
-}
-footer p {
-    color: #333;
-    font-size: 12px;
-    padding-top: 3px;
-}
+
+
+
 
 
 /* ABOUT */
 .about {
     line-height: 1.5;
-    overflow-y: auto;
 }
 .about h1 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-size: xx-large;
-    width: 50%;
+    width: 90%;
 }
 .about p {
     text-align: justify;
@@ -170,27 +139,46 @@ footer p {
     margin-left: auto;
     margin-right: auto;
 }
+.about .logo-container img {
+    width: 110px;
+    height: auto;
+}
 @media screen and (max-width: 600px) {
     .about h1 {
         width: 85%;
-        padding-bottom: 20px;
     }
     .about p {
         width: 85%;
-        padding-bottom: 40px;
+
     }
 }
 
+
+
 /* RELEASES */
 .releases {
-    width: 80%;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
 }
+
 .releases img {
-    width: 100%;
+    width: 85%;
+}
+.releases h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large;
+    width: 90%;
 }
 .releases p {
-    padding-top: 30px;
-    font-size: large;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 @media screen and (min-width: 600px) {
     .releases p {
@@ -201,8 +189,11 @@ footer p {
     }
 }
 
-/* EVENTS */
 
+
+
+
+/* EVENTS */
 .flyer-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -225,8 +216,8 @@ footer p {
     font-size: xx-large;
     width: 100%; /* Ensures the header takes full width of its container */
     margin: 0 auto; /* Centers the header block and removes default margin */
-    padding: 10px 0; /* Optional: Adds some spacing above and below the header */
-    padding-top: 30px;
+    padding: 0px 0; /* Optional: Adds some spacing above and below the header */
+    padding-top: 0px;
 }
 @media screen and (min-width: 600px) {
     .flyer-gallery {
@@ -240,13 +231,11 @@ footer p {
 }
 
 
-
-/* Base Styles for Gallery */
+/* EVENTS: GALLERY */
 .gallery {
     margin-bottom: 10px; /* Space below the gallery */
     padding: 0px 0px; /* Adds padding to the left and right */
     max-width: 100%;
-    overflow-y: auto; /* Enables vertical scrolling if content overflows */
 }
 .gallery img {
     width: 100%; /* Images take full width of their container */
@@ -275,27 +264,26 @@ footer p {
 
 .gallery p.caption {
     text-align: justify;
-    max-width: 80%;
+    width: 80%;
 }
 
 /* Masonry Layout for Smaller Screens */
 @media screen and (max-width: 599px) {
     .gallery {
-        column-count: 1; /* Two columns on smaller screens */
-        column-gap: 0px;
-        max-width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Adjusts the alignment of items */
     }
-    
+
     .gallery img {
-        break-inside: avoid; /* Prevents images from being split across columns */
-        width: 100%;
+        width: 90%;
     }
 
     .gallery.lone-image-container img.lone-image {
         column-span: all; /* Makes the image span all columns */
         display: block;
         margin: 0 auto; /* Center the image horizontally */
-        max-width: 80%; /* Adjust as needed */
+        width: 80%; /* Adjust as needed */
         height: auto; /* Maintain aspect ratio */
     }
 }
@@ -307,7 +295,6 @@ footer p {
         justify-content: space-around; /* Adjusts the alignment of items */
     }
     .gallery img {
-        break-inside: avoid; /* Prevents images from being split across columns */
         width: 80%;
     }
     .gallery .lone-image {
@@ -323,14 +310,23 @@ footer p {
 
 
 /* RADIO */
-.radio {
-    overflow: auto;
-}
-.radio h2, p {
-    padding: 30px;
-}
 
+.radio h2, p {
+    padding: 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
 .radio h2 a {
+    text-decoration: none;
+    color: #f9f9f9;
+    width: 70%;
+}
+.radio h2 a:hover{
+    color: #333;
+}
+.radio h1 {
     padding-top: 20px;
 }
 .radio h1 a{
@@ -350,15 +346,51 @@ footer p {
     flex-wrap: wrap; 
 }
 .logo {
-    max-width: 110px;
+    width: 110px;
     height: auto; /* Maintain aspect ratio */
-    padding-bottom: 30px;
     margin: 0 10px;
+}
+
+/* GUESTS */
+.guest h1 {
+    text-align: center;
+}
+.guest-list {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+.guest-column {
+    flex: 1;
+}
+.guest-item {
+    margin-bottom: 40px;
+}
+.guest-image {
+    width: 100%; /* Full width of the item */
+    height: auto; /* Maintain aspect ratio */
+}
+.guest-item h2 {
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    text-decoration: wavy underline;
+}
+.guest-bio {
+    text-align: center;
 }
 
 
 
+
 /* CONTACT */
+.contact{
+    display:flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+}
 .email-link {
     font-size: xx-large;
     color: #f9f9f9;

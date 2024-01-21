@@ -1,4 +1,4 @@
-import { eventData } from './load_event.js';
+import { eventData } from './event_data.js';
 
 function loadFlyers() {
     const upcoming_gallery = document.querySelector('.flyer-gallery');
