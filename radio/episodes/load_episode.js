@@ -2,20 +2,48 @@ import { episodeData } from './episode_data.js';
 
 function loadEpisodes(episodeData) {
     const episodeList = document.querySelector('.episode-list');
-    const column1 = document.getElementById('episodeColumn1');
-    const column2 = document.getElementById('episodeColumn2');
+    console.log(window.innerWidth < 1000);
+    console.log(window.innerWidth);
+    if (window.innerWidth < 1000) {
+        const col = document.createElement('episodeColumn');
+        Object.values(episodeData).forEach((episode,index) => {
+            const episodeItem = createEpisodeItem(episode);
+            // Append the item to the gallery container
+            col.appendChild(episodeItem);
+            episodeList.appendChild(col);
+     
+        });
+    } else if (window.innerWidth >= 1000) {
+        const column1 = document.createElement('episodeColumn1');
+        const column2 = document.createElement('episodeColumn2');
 
-    Object.values(episodeData).forEach((episode,index) => {
-        const episodeItem = createEpisodeItem(episode);
-        // Append the item to the gallery container
-        if (index % 2 === 0) {
-            column1.appendChild(episodeItem);
-        } else {
-            column2.appendChild(episodeItem);
+        Object.values(episodeData).forEach((episode,index) => {
+            const episodeItem = createEpisodeItem(episode);
+            // Append the item to the gallery container
+
+            if (index % 2 === 0) {
+                column1.appendChild(episodeItem);
+            } else {
+                column2.appendChild(episodeItem);
+            }
+            episodeList.appendChild(column1);
+            episodeList.appendChild(column2);
+        });
+    }
+}
+
+function windowRefresh() {
+    let wasAbove1000 = window.innerWidth >= 1000;
+    window.addEventListener('resize', function() {
+
+        const isAbove1000 = window.innerWidth >= 1000;
+        
+        if (isAbove1000 !== wasAbove1000) {
+            window.location.reload();
         }
-        // episodeList.appendChild(episodeItem);
-        episodeList.appendChild(column1);
-        episodeList.appendChild(column2);
+
+        wasAbove1000 = isAbove1000;
+
     });
 }
 
@@ -56,3 +84,4 @@ function createEpisodeItem(episode) {
 
 // Call this function when you want to load the gallery
 loadEpisodes(episodeData);
+windowRefresh();

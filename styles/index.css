@@ -131,25 +131,51 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     font-size: xx-large;
-    width: 90%;
+    width: 50%;
 }
 .about p {
     text-align: justify;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    padding: 2%;
+}
+.about .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding: 0px;
 }
 .about .logo-container img {
-    width: 110px;
+    width: 150px;
     height: auto;
+    margin: 10px;
 }
 @media screen and (max-width: 600px) {
     .about h1 {
         width: 85%;
     }
     .about p {
+        text-align: justify;
         width: 85%;
-
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8%;
+    }
+    .about .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5%;
+        padding: 0px;
+    }
+    .about .logo-container img {
+        width: 150px;
+        height: auto;
+        margin: 10px;
     }
 }
 
@@ -310,13 +336,20 @@ nav ul li a:hover {
 
 
 /* RADIO */
-
-.radio h2, p {
+.radio p {
     padding: 0px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 25px;
+    padding: 15px;
+    font-size: x-large;
+}
+.radio h2{
+    padding: 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
 }
 .radio h2 a {
     text-decoration: none;
@@ -328,6 +361,7 @@ nav ul li a:hover {
 }
 .radio h1 {
     padding-top: 20px;
+    font-size: 250%;
 }
 .radio h1 a{
     color: #f9f9f9;
@@ -338,12 +372,11 @@ nav ul li a:hover {
 }
 .logo-container {
     display: flex;
-    justify-content: center; /* Center logos horizontally */
-    align-items: center; /* Align logos vertically in the center */
-    padding: 10px;
-    gap: 30px; /* Space between logos */
-    display: flex;
-    flex-wrap: wrap; 
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 5%;
 }
 .logo {
     width: 110px;
@@ -358,14 +391,15 @@ nav ul li a:hover {
 .episode-list {
     display: flex;
     gap: 10px;
-    padding: 10px;
-    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
 }
 .episode-column {
     flex: 1;
 }
 .episode-item {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .episode-image {
@@ -374,7 +408,7 @@ nav ul li a:hover {
 }
 .episode-item h2 {
     text-align: center;
-    padding-top: 7px;
+    padding-top: 5px;
     padding-bottom: 5px;
 }
 .episode-link {
@@ -391,13 +425,45 @@ nav ul li a:hover {
     font-size: medium;
 }
 /* Grid Layout for Larger Screens */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
     .episode-list {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-    } 
+        gap: 100px;
+    }
+    .logo-container {
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        gap: 7%;
+    }
+    .logo {
+        width: 230px;
+        height: auto; /* Maintain aspect ratio */
+    }
 }
+@media screen and (max-width: 999px) {
+    .episode-list {
+        display: grid;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .radio p {
+        font-size: medium;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .radio h1 {
+        font-size: x-large;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
 
 
 
