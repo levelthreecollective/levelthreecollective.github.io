@@ -12,7 +12,8 @@ function loadFlyers() {
             upcoming_count++;
             // Create the anchor tag
             const a = document.createElement('a');
-            a.href = `gallery/?event=${event.id}`;
+            // a.href = `gallery/?event=${event.id}`;
+            a.href = event.link
 
             // Create the image tag
             const img = document.createElement('img');
