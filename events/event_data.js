@@ -1,4 +1,15 @@
 export const eventData = {
+    "bossa_civic": {
+        id: "bossa_civic",
+        archive: false,
+        title: "LIII & Halfmoon",
+        location: "Bossa Nova",
+        date: "31st March 2024",
+        flyerSrc: "flyers/flyer_name.jpeg",
+        caption: "Join us for this event...",
+        images: [
+        ]
+    },
     "ludlow": {
         id: "ludlow",
         archive: true,
