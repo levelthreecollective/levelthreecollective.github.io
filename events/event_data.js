@@ -2,6 +2,7 @@ export const eventData = {
     "bossa_civic": {
         id: "bossa_civic",
         archive: false,
+        link: "https://ra.co/events/1887803",
         title: "LIII & Halfmoon",
         location: "Bossa Nova",
         date: "31st March 2024",
