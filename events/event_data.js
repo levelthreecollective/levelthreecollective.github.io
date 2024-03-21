@@ -10,6 +10,7 @@ export const eventData = {
         caption: "Join us for this event...",
         images: [
         ]
+    },
     "bossa_civic": {
         id: "bossa_civic",
         archive: false,
