@@ -1,16 +1,4 @@
 export const eventData = {
- "elsewhere_may_4": {
-        id: "elsewhere_may_4",
-        archive: false,
-        link: "https://ra.co/events/1875922?returnUrl=%2Fclubs%2F139960",
-        title: "LIII at Elsewhere",
-        location: "Elsewhere Brooklyn",
-        date: "4th May 2024",
-        flyerSrc: "flyers/elsewhere_5_4_24.jpeg",
-        caption: "Join us for this event...",
-        images: [
-        ]
-    },
     "bossa_civic": {
         id: "bossa_civic",
         archive: false,
