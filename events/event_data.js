@@ -45,7 +45,7 @@ export const eventData = {
     "ludlow": {
         id: "ludlow",
         archive: true,
-        title: "Sound Session",
+        title: "Level III Sound Session",
         location: "Ludlow House - New York, NY",
         date: "5th January 2024",
         flyerSrc: "flyers/ludlow_house.jpeg",
@@ -69,7 +69,7 @@ export const eventData = {
    },          
     "open+the+garage": {
         archive: true,
-        title: "Open the Garage!",
+        title: "Level III Presents: Open the Garage!",
         location: "Lume Studios - Chelsea, NY",
         date: "4th March 2023",
         id: "open+the+garage",
@@ -90,7 +90,7 @@ export const eventData = {
     },
     "its+too+loud": {
         archive: true,
-        title: "It's Too Loud!",
+        title: "Level III Presents: It's Too Loud!",
         location: "Bogart House - Brooklyn, NY",
         date: "28th January 2023",
         id: "its+too+loud",
@@ -115,7 +115,7 @@ export const eventData = {
     },
     "convocation": {
         archive: true,
-        title: "CONVOCATION",
+        title: "Level III Presents: CONVOCATION",
         location: "Kind Regards - New York, NY",
         date: "16th June 2023",
         id: "convocation",
