@@ -1,7 +1,19 @@
 export const eventData = {
+     "elsewhere_5_4_2024": {
+        id: "elsewhere_5_4_2024",
+        archive: false,
+        link: "https://link.dice.fm/Mc9925e3a7d8?dice_id=Mc9925e3a7d8&sharer_id=5e39c6e6d30dd07ee1114829&sharer=fan",
+        title: "LIII at Elsewhere",
+        location: "Elsewhere Brooklyn",
+        date: "4th May 2024",
+        flyerSrc: "flyers/elsewheremay4.jpeg",
+        caption: "Join us for this event...",
+        images: [
+        ]
+    },
     "bossa_civic": {
         id: "bossa_civic",
-        archive: false,
+        archive: true,
         link: "https://ra.co/events/1887803",
         title: "LIII & Halfmoon",
         location: "Bossa Nova",
