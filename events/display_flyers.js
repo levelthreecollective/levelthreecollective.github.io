@@ -19,6 +19,7 @@ function loadFlyers() {
             const img = document.createElement('img');
             img.src = event.flyerSrc;
             img.alt = event.title;
+            img.alt = event.link;
 
             // Append the image to the link, and the link to the container
             a.appendChild(img);
