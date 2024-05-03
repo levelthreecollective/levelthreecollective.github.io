@@ -256,7 +256,7 @@ nav ul li a:hover {
     }
 
     .flyer-gallery img {
-        flex: 1 0 calc(33.33333% - 20px); /* Three images per row, accounting for gap */
+        flex: 1 0 calc(33.33333% - 20px); 
         max-width: 400px;
     }
 }
@@ -265,14 +265,14 @@ nav ul li a:hover {
 /* EVENTS: GALLERY */
 .gallery {
     margin-bottom: 10px; /* Space below the gallery */
-    padding: 0px 0px; /* Adds padding to the left and right */
+    padding: 0px 0px; 
     max-width: 100%;
 }
 .gallery img {
-    width: 100%; /* Images take full width of their container */
-    height: auto; /* Height adjusts to maintain aspect ratio */
-    display: block; /* Removes extra space below images */
-    margin-bottom: 0px; /* Adds space below each image */
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-bottom: 0px; 
 }
 .gallery h2 {
     text-align: center;
@@ -281,7 +281,15 @@ nav ul li a:hover {
     margin: 0 auto;
     padding: 0px;
     padding-bottom: 5px;
-    column-span: all; /* Ensures the text spans all columns */
+    column-span: all;
+}
+.gallery a {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+.gallery a:hover {
+    text-decoration: none;
+    color: #333;
 }
 .gallery p {
     text-align: center;
@@ -290,7 +298,7 @@ nav ul li a:hover {
     margin: 0 auto;
     padding: 0px;
     padding-bottom: 15px;
-    column-span: all; /* Ensures the text spans all columns */
+    column-span: all; 
 }
 
 .gallery p.caption {
@@ -303,7 +311,7 @@ nav ul li a:hover {
     .gallery {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around; /* Adjusts the alignment of items */
+        justify-content: space-around;
     }
 
     .gallery img {
@@ -452,6 +460,13 @@ nav ul li a:hover {
 }
 /* Grid Layout for Larger Screens */
 @media screen and (min-width: 1000px) {
+    .episode-image {
+        max-width: 600px;
+        max-height: 600px;
+        width: 100%; /* Full width of the item */
+        height: auto; /* Maintain aspect ratio */
+    }
+
     .episode-list {
         width: 70%;
         margin-left: auto;

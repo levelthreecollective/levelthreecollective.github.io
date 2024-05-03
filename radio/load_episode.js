@@ -2,11 +2,12 @@ import { episodeData } from './episode_data.js';
 
 function loadEpisodes(episodeData) {
     const episodeList = document.querySelector('.episode-list');
+    
     console.log(window.innerWidth < 1000);
     console.log(window.innerWidth);
     if (window.innerWidth < 1000) {
         const col = document.createElement('episodeColumn');
-        Object.values(episodeData).forEach((episode,index) => {
+        Object.values(episodeData).reverse().forEach((episode,index) => {
             const episodeItem = createEpisodeItem(episode);
             // Append the item to the gallery container
             col.appendChild(episodeItem);
@@ -17,7 +18,7 @@ function loadEpisodes(episodeData) {
         const column1 = document.createElement('episodeColumn1');
         const column2 = document.createElement('episodeColumn2');
 
-        Object.values(episodeData).forEach((episode,index) => {
+        Object.values(episodeData).reverse().forEach((episode,index) => {
             const episodeItem = createEpisodeItem(episode);
             // Append the item to the gallery container
 

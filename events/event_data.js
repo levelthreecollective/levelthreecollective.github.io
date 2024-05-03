@@ -1,6 +1,6 @@
 export const eventData = {
-     "elsewhere_5_4_2024": {
-        id: "elsewhere_5_4_2024",
+     "elsewhere+05042024": {
+        id: "elsewhere+05042024",
         archive: false,
         link: "https://link.dice.fm/Mc9925e3a7d8?dice_id=Mc9925e3a7d8&sharer_id=5e39c6e6d30dd07ee1114829&sharer=fan",
         title: "Level III at Elsewhere Zone 1",
@@ -11,8 +11,8 @@ export const eventData = {
         images: [
         ]
     },
-    "bossa_civic": {
-        id: "bossa_civic",
+    "bossa+civic": {
+        id: "bossa+civic",
         archive: true,
         link: "https://ra.co/events/1887803",
         title: "Level III x Halfmoon BK",
@@ -64,7 +64,6 @@ export const eventData = {
             "ludlow/11.jpg", 
             "ludlow/12.jpg", 
             "ludlow/13.jpg", 
-            // More images
         ]
    },          
     "open+the+garage": {
@@ -89,11 +88,11 @@ export const eventData = {
         ]
     },
     "its+too+loud": {
+        id: "its+too+loud",
         archive: true,
         title: "Level III Presents: It's Too Loud!",
         location: "Bogart House - Brooklyn, NY",
         date: "28th January 2023",
-        id: "its+too+loud",
         flyerSrc: "flyers/its_too_loud.jpeg",
         caption: "Join us for this event...",
         images: [
@@ -114,11 +113,11 @@ export const eventData = {
         ]
     },
     "convocation": {
+        id: "convocation",
         archive: true,
         title: "Level III Presents: CONVOCATION",
         location: "Kind Regards - New York, NY",
         date: "16th June 2023",
-        id: "convocation",
         flyerSrc: "flyers/kind_regards.jpeg",
         caption: "Join us for this event...",
         images: [

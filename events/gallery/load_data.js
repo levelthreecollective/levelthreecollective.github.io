@@ -7,9 +7,19 @@ function loadEvent() {
 
     const gallery = document.querySelector('.gallery');
     
-    const h2g = document.createElement('h2');
-    h2g.textContent = event.title;
-    gallery.appendChild(h2g);
+    if (event.link) {
+        const link = document.createElement('a');
+        link.href = event.link;
+        const h2g = document.createElement('h2');
+        h2g.textContent = event.title;
+        link.appendChild(h2g);
+        gallery.appendChild(link);
+    }
+    else {
+        const h2g = document.createElement('h2');
+        h2g.textContent = event.title;
+        gallery.appendChild(h2g);
+    }
 
     const pg = document.createElement('p');
     pg.innerHTML = `Location: ${event.location}<br>Date: ${event.date}`;
