@@ -68,11 +68,11 @@ function createEpisodeItem(episode) {
     episodeLink2.className = 'episode-link';
     episodeLink2.href = episode.link;
 
-    const nameh2 = document.createElement('h2');
-    nameh2.className = 'episode-name';
-    nameh2.textContent = episode.name;
-    episodeLink2.appendChild(nameh2);
-    episodeItem.appendChild(episodeLink2);
+    // const nameh2 = document.createElement('h2');
+    // nameh2.className = 'episode-name';
+    // nameh2.textContent = episode.name;
+    // episodeLink2.appendChild(nameh2);
+    // episodeItem.appendChild(episodeLink2);
 
     // Create and append the caption
     const captionDiv = document.createElement('div');

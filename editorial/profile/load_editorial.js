@@ -1,87 +1,64 @@
 import { editorialData } from '../editorial_data.js';
 
-function loadEpisodes(editorialData) {
-    const episodeList = document.querySelector('.episode-list');
-    console.log(window.innerWidth < 1000);
-    console.log(window.innerWidth);
-    if (window.innerWidth < 1000) {
-        const col = document.createElement('episodeColumn');
-        Object.values(editorialData).forEach((episode,index) => {
-            const episodeItem = createEpisodeItem(episode);
-            // Append the item to the gallery container
-            col.appendChild(episodeItem);
-            episodeList.appendChild(col);
-     
-        });
-    } else if (window.innerWidth >= 1000) {
-        const column1 = document.createElement('episodeColumn1');
-        const column2 = document.createElement('episodeColumn2');
-
-        Object.values(editorialData).forEach((episode,index) => {
-            const episodeItem = createEpisodeItem(episode);
-            // Append the item to the gallery container
-
-            if (index % 2 === 0) {
-                column1.appendChild(episodeItem);
-            } else {
-                column2.appendChild(episodeItem);
-            }
-            episodeList.appendChild(column1);
-            episodeList.appendChild(column2);
-        });
-    }
-}
-
-function windowRefresh() {
-    let wasAbove1000 = window.innerWidth >= 1000;
-    window.addEventListener('resize', function() {
-
-        const isAbove1000 = window.innerWidth >= 1000;
-
-        if (isAbove1000 !== wasAbove1000) {
-            window.location.reload();
+function loadLines(gallery, text_list) {
+    text_list.forEach((item, index) => {
+        if (typeof item === 'string' && item.slice(-4) == '.jpg') {
+            const img = document.createElement('img');
+            img.src = item;  // Directly using the item as the source for images
+            gallery.appendChild(img);
+        } else if (typeof item === 'string' && item.slice(0,1) == '"' && item.slice(-1) == '"') {
+            const bigQuote = document.createElement('h2');
+            bigQuote.textContent = item;
+            gallery.appendChild(bigQuote);
         }
-
-        wasAbove1000 = isAbove1000;
-
+        else if (typeof item === 'string' && item.slice(0,2) == 'Q:') {
+            const p = document.createElement('p');
+            p.style.textAlign = 'justify';
+            p.style.fontWeight = 'bold';
+            p.textContent = item.slice(2);
+            gallery.appendChild(p);
+        }
+        else {
+            const p = document.createElement('p');
+            p.style.textAlign = 'justify';
+            p.textContent = item;
+            gallery.appendChild(p);
+        }
     });
 }
 
-function createEpisodeItem(episode) {
-    // Create a container for each image and caption
-    const episodeItem = document.createElement('div');
-    episodeItem.className = 'episode-item';
+function loadEditorial() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const editorialId = urlParams.get('profile').replaceAll(' ', '+'); // Assuming URL is like event_template.html?event=event1
+    const editorial = editorialData[editorialId];
 
-    // Create and append the image
-    const episodeLink = document.createElement('a');
-    episodeLink.href = episode.link;
-
-    const img = document.createElement('img');
-    img.src = episode.cover;
-    img.className = 'episode-image';
-    episodeLink.appendChild(img);
-    episodeItem.appendChild(episodeLink);
+    const gallery = document.querySelector('.editorial');
     
-    // Create and append Name
-    const episodeLink2 = document.createElement('a');
-    episodeLink2.className = 'episode-link';
-    episodeLink2.href = episode.link;
+    if (editorial.link) {
+        const link = document.createElement('a');
+        link.href = editorial.link;
+        const h2g = document.createElement('h2');
+        h2g.textContent = editorial.title;
+        link.appendChild(h2g);
+        gallery.appendChild(link);
+    }
+    else {
+        const h2g = document.createElement('h2');
+        h2g.textContent = editorial.title;
+        gallery.appendChild(h2g);
+    }
 
-    const nameh2 = document.createElement('h2');
-    nameh2.className = 'episode-name';
-    nameh2.textContent = episode.name;
-    episodeLink2.appendChild(nameh2);
-    episodeItem.appendChild(episodeLink2);
-
-    // Create and append the caption
-    const captionDiv = document.createElement('div');
-    captionDiv.className = 'episode-bio';
-    captionDiv.textContent = episode.caption;
-    episodeItem.appendChild(captionDiv);
-
-    return episodeItem;
+    const pg = document.createElement('p');
+    pg.className = 'editorial-subheader';
+    pg.innerHTML = `<b>Words</b> by ${editorial.interviewer}<br><b>Photos</b> by ${editorial.photographer}<br>Editorial <b>${editorial.date}</b>`;
+    gallery.appendChild(pg); 
+    fetch(editorial.content)
+        .then(response => response.text())
+        .then(text => {
+            const lines = text.split('\n').filter(line => line.trim() !== '');
+            loadLines(gallery, lines);
+        })
+        .catch(error => console.error('Error fetching the file:', error));
 }
 
-// Call this function when you want to load the gallery
-loadEpisodes(editorialData);
-windowRefresh();
+document.addEventListener('DOMContentLoaded', loadEditorial);

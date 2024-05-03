@@ -1,26 +1,28 @@
 export const editorialData = {
     "zano" : {
-        name: "Zano",
-        cover: "zano/Zano1.jpg",
-        content: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-            , "zano/Zano6.jpg"
-            , 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-            , "zano/zano10.jpg"
-            , 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-        ]
+        id: "zano",
+        display_name: "Zano",
+        cover: "profile/zano/zano_profile.jpeg",
+        title: "Level III Presents: ZANO",
+        caption: "A conversation with Zano: Zano walks us through how she holds Johannesburg close while navigating NYC, while keeping her life culturally rich, creative, and with great people.",
+        interviewer: "Antony Ramirez",
+        photographer: "Antony Ramirez",
+        date: "APR 24",
+        link: "",
+        content: "zano/interview.txt"
     },
 
     "niara" : {
-        name: "Niara",
-        cover: "niara/Niara2.jpg",
-        content: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-            , "niara/Niara3.jpg"
-            , 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-            , "niara/Niara5.jpg"
-            , 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-        ]
-    }
+        id: "niara",
+        display_name: "Niara",
+        cover: "profile/niara/niara_profile.jpeg",
+        title: "Level III Presents: NIARA",
+        caption: "Niara gives us an inside view into etc etc etc something something",
+        interviewer: "Dennis Franklin",
+        photographer: "Antony Ramirez",
+        date: "APR 24",
+        link: "",
+        content: "niara/interview.txt"
+    },
 
 };
