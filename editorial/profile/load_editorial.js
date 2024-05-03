@@ -37,13 +37,13 @@ function loadEditorial() {
     if (editorial.link) {
         const link = document.createElement('a');
         link.href = editorial.link;
-        const h2g = document.createElement('h2');
+        const h2g = document.createElement('h1');
         h2g.textContent = editorial.title;
         link.appendChild(h2g);
         gallery.appendChild(link);
     }
     else {
-        const h2g = document.createElement('h2');
+        const h2g = document.createElement('h1');
         h2g.textContent = editorial.title;
         gallery.appendChild(h2g);
     }
