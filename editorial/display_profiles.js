@@ -58,6 +58,8 @@ function createProfileItem(profile) {
 
     const img = document.createElement('img');
     img.src = profile.cover;
+    img.style.border = '4px solid #00663600';
+    img.style.borderRadius = '10px';
     img.className = 'episode-image';
     profileLink.appendChild(img);
     profileItem.appendChild(profileLink);
