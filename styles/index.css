@@ -550,7 +550,7 @@ nav ul li a:hover {
     margin: auto auto;
 }
 .editorial img { 
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-top: 10px;
 }
 .editorial h2 {
@@ -574,17 +574,17 @@ nav ul li a:hover {
 }
 
 /* Masonry Layout for Smaller Screens */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1199px) {
     .editorial {
         max-width: 85%;
     }
     .editorial img {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 }
 /* Grid Layout for Larger Screens */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
     .editorial {
         max-width: 40%;
     }

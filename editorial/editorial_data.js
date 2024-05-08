@@ -4,11 +4,11 @@ export const editorialData = {
         display_name: "Zano",
         cover: "profile/zano/zano_profile.jpeg",
         title: "Level III Presents: ZANO",
-        caption: "A conversation with Zano: Zano walks us through how she holds Johannesburg close while navigating NYC, while keeping her life culturally rich, creative, and with great people.",
+        caption: "Zano walks us through how she holds Johannesburg close while navigating NYC, while keeping her life culturally rich, creative, and with great people.",
         interviewer: "Antony Ramirez",
         photographer: "Antony Ramirez",
         date: "APR 24",
-        link: "",
+        link: "https://www.zanonkosi.com/",
         content: "zano/interview.txt"
     },
 
@@ -21,7 +21,7 @@ export const editorialData = {
         interviewer: "Dennis Franklin",
         photographer: "Antony Ramirez",
         date: "APR 24",
-        link: "",
+        link: "https://www.instagram.com/niarasterling/",
         content: "niara/interview.txt"
     },
 
