@@ -22,7 +22,7 @@ function loadFlyers() {
             img.src = event.flyerSrc;
             img.alt = event.title;
             img.alt = event.link;
-            img.style.border = '4px solid #f9f9f9';
+            img.style.border = '4px solid #00663600';
             img.style.borderRadius = '10px';
 
             // Append the image to the link, and the link to the container
@@ -55,8 +55,8 @@ function loadFlyers() {
             const img = document.createElement('img');
             img.src = event.flyerSrc;
             img.alt = event.title;
-            img.style.border = '4px solid #006636ba';
-            img.style.borderRadius = '4px';
+            img.style.border = '4px solid #00663600';
+            img.style.borderRadius = '10px';
 
             // Append the image to the link, and the link to the container
             a.appendChild(img);
