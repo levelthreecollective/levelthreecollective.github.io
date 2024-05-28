@@ -18,7 +18,7 @@ export const editorialData = {
         cover: "profile/niara/niara_profile.jpeg",
         title: "Level III Presents: NIARA",
         caption: "Niara gives us an inside view into etc etc etc something something",
-        interviewer: "Dennis Franklin",
+        interviewer: "Matthew-David Ilomuanya",
         photographer: "Antony Ramirez",
         date: "APR 24",
         link: "https://www.instagram.com/niarasterling/",
