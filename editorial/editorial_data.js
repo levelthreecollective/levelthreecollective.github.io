@@ -17,7 +17,7 @@ export const editorialData = {
         display_name: "Niara",
         cover: "profile/niara/niara_profile.jpeg",
         title: "Level III Presents: NIARA",
-        caption: "Niara gives us an inside view into etc etc etc something something",
+        caption: "",
         interviewer: "Matthew-David Ilomuanya",
         photographer: "Antony Ramirez",
         date: "APR 24",
