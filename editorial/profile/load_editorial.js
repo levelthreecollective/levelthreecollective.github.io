@@ -35,25 +35,26 @@ function loadEditorial() {
     const editorial = editorialData[editorialId];
 
     const gallery = document.querySelector('.editorial');
-    
-    if (editorial.link) {
-        const link = document.createElement('a');
-        link.href = editorial.link;
-        const h2g = document.createElement('h1');
-        h2g.textContent = editorial.title;
-        link.appendChild(h2g);
-        gallery.appendChild(link);
-    }
-    else {
-        const h2g = document.createElement('h1');
-        h2g.textContent = editorial.title;
-        gallery.appendChild(h2g);
-    }
+
     const main_image = document.createElement('img');
     main_image.src = '../' + editorial.cover;
     main_image.style.border = '4px solid white';
     main_image.style.borderRadius = '10px';
-    gallery.appendChild(main_image);
+
+    // const h2g = document.createElement('h1');
+    // h2g.textContent = editorial.title;
+    // gallery.appendChild(h2g);
+
+    if (editorial.link) {
+        const link = document.createElement('a');
+        link.href = editorial.link;
+        link.appendChild(main_image);
+        gallery.appendChild(link);
+    }
+    else {
+        gallery.appendChild(main_image);
+    }
+
     const pg = document.createElement('p');
     pg.className = 'editorial-subheader';
     pg.innerHTML = `<b>Words</b> by ${editorial.interviewer}<br><b>Photos</b> by ${editorial.photographer}<br>Editorial <b>${editorial.date}</b>`;
