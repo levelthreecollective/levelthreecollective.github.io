@@ -12,17 +12,17 @@ export const editorialData = {
         content: "zano/interview.txt"
     },
 
-    "niara" : {
-        id: "niara",
-        display_name: "Niara",
-        cover: "profile/niara/niara_profile.jpeg",
-        title: "Level III Presents: NIARA",
-        caption: "",
-        interviewer: "Matthew-David Ilomuanya",
-        photographer: "Antony Ramirez",
-        date: "APR 24",
-        link: "https://www.instagram.com/niarasterling/",
-        content: "niara/interview.txt"
-    },
+    // "niara" : {
+    //     id: "niara",
+    //     display_name: "Niara",
+    //     cover: "profile/niara/niara_profile.jpeg",
+    //     title: "Level III Presents: NIARA",
+    //     caption: "",
+    //     interviewer: "Matthew-David Ilomuanya",
+    //     photographer: "Antony Ramirez",
+    //     date: "APR 24",
+    //     link: "https://www.instagram.com/niarasterling/",
+    //     content: "niara/interview.txt"
+    // },
 
 };
