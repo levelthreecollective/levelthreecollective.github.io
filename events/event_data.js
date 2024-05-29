@@ -3,7 +3,7 @@ export const eventData = {
         id: "elsewhere+05042024",
         archive: true,
         link: "https://link.dice.fm/Mc9925e3a7d8?dice_id=Mc9925e3a7d8&sharer_id=5e39c6e6d30dd07ee1114829&sharer=fan",
-        title: "Level III at Elsewhere Zone 1",
+        title: "Level III at Elsewhere - Zone 1",
         location: "Elsewhere - Brooklyn, NY",
         date: "4th May 2024",
         flyerSrc: "flyers/elsewheremay4.jpeg",
