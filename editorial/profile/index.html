@@ -74,6 +74,15 @@
         </div>
         <p>&copy; 2024 LEVEL THREE HOLDINGS LLC</p>
     </footer>
+
+    <script>
+        window.onload = function() {
+          if (!localStorage.getItem('refreshed')) {
+            localStorage.setItem('refreshed', 'true');
+            window.location.reload();
+          }
+        };
+      </script>
     
 </body>
 </html>
