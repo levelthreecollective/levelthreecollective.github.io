@@ -4,7 +4,7 @@ export const editorialData = {
         display_name: "Zano",
         cover: "profile/zano/zano_profile.jpeg",
         title: "Level III Presents: ZANO",
-        caption: "Zano walks us through how she holds Johannesburg close while navigating NYC, while keeping her life culturally rich, creative, and with great people. Click the poster to listen to her set.",
+        caption: "We caught up with Zano ahead of our Elsewhere show back in April to discuss how she holds Johannesburg close while keeping her life culturally rich and creative in NYC. Click the poster to listen to her set.",
         interviewer: "Antony Ramirez",
         photographer: "Antony Ramirez",
         date: "APR 24",
