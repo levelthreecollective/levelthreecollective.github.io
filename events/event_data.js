@@ -9,6 +9,19 @@ export const eventData = {
         flyerSrc: "flyers/elsewheremay4.jpeg",
         caption: "Join us for this event...",
         images: [
+            "elsewhere050424/1.jpg",
+            "elsewhere050424/2.jpg",
+            "elsewhere050424/3.jpg",
+            "elsewhere050424/4.jpg",
+            "elsewhere050424/5.jpg",
+            "elsewhere050424/6.jpg",
+            "elsewhere050424/7.jpg", 
+            "elsewhere050424/8.jpg", 
+            "elsewhere050424/9.jpg", 
+            "elsewhere050424/10.jpg",
+            "elsewhere050424/11.jpg", 
+            "elsewhere050424/12.jpg", 
+            "elsewhere050424/13.jpg", 
         ]
     },
     "bossa+civic": {
