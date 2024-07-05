@@ -1,4 +1,14 @@
 export const eventData = {
+     "silo": {
+        id: "silo",
+        archive: false,
+        link: "https://dice.fm/event/k6p5e9-level-iii-presents-dj-swisha-stonie-blue-more-20th-jul-silo-brooklyn-brooklyn-tickets",
+        title: "Level III at SILO",
+        location: "SILO - Brooklyn, NY",
+        date: "20th July 2024",
+        flyerSrc: "flyers/silo.jpeg",
+        caption: "Join us for this event...",
+    },
      "elsewhere+05042024": {
         id: "elsewhere+05042024",
         archive: true,
