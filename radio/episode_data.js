@@ -1,4 +1,10 @@
 export const episodeData = {
+"14": {
+        name: "EP14",
+        cover: "covers/14.jpg",
+        link: "https://www.youtube.com/watch?v=_QoqkEhfiUI",
+        caption: "",
+    },        
 "13": {
         name: "EP13",
         cover: "covers/13.jpg",
