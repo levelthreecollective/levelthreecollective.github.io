@@ -1,8 +1,8 @@
 export const eventData = {
      "silo": {
         id: "silo",
-        archive: false,
-        link: "https://ra.co/events/1944071",
+        archive: true,
+        link: "https://www.youtube.com/playlist?list=PLrX2ek2EKWv9LVokyX4fczENwx9GTBbtq",
         title: "Level III at SILO",
         location: "SILO - Brooklyn, NY",
         date: "20th July 2024",
