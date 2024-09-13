@@ -3,11 +3,17 @@ export const eventData = {
         id: "silo",
         archive: true,
         link: "https://www.youtube.com/playlist?list=PLrX2ek2EKWv9LVokyX4fczENwx9GTBbtq",
+        yt_links: [
+            "https://www.youtube.com/embed/videoseries?si=eQ8giE-pehdG_Za4&amp;controls=0&amp;list=PLrX2ek2EKWv9LVokyX4fczENwx9GTBbtq",
+            "https://www.youtube.com/embed/TS_EMkqpoG4?si=nFgwcx_zJcxj9wLq",
+            "https://www.youtube.com/embed/7gRlb8VPNlo",
+            "https://www.youtube.com/embed/5VV3t8zWCC4?si=vZXoWfGLEMnIi5LU",
+            "https://www.youtube.com/embed/j1bedAyQaJM?si=dmdhmCYXzc-3OKzg",
+        ],
         title: "Level III at SILO",
         location: "SILO - Brooklyn, NY",
         date: "20th July 2024",
         flyerSrc: "flyers/silo.jpeg",
-        caption: "Join us for this event...",
     },
      "elsewhere+05042024": {
         id: "elsewhere+05042024",

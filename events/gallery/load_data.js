@@ -6,6 +6,8 @@ function loadEvent() {
     const event = eventData[eventId];
 
     const gallery = document.querySelector('.gallery');
+
+
     
     if (event.link) {
         const link = document.createElement('a');
@@ -23,7 +25,23 @@ function loadEvent() {
 
     const pg = document.createElement('p');
     pg.innerHTML = `Location: ${event.location}<br>Date: ${event.date}`;
-    gallery.appendChild(pg); 
+    gallery.appendChild(pg);
+
+    if (event.yt_links && event.yt_links.length > 0) {
+        event.yt_links.forEach(yt_link => {
+            const iframe = document.createElement('iframe');
+
+            iframe.width = "70%";
+            iframe.height = "315px";
+            iframe.src = yt_link;
+            iframe.frameBorder = '0';
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            iframe.referrerpolicy = 'strict-origin-when-cross-origin';
+            iframe.allowFullscreen = true;
+
+            gallery.appendChild(iframe);
+        });
+    }
 
     if (event.archive == true) {
         event.images.forEach(imageSrc => {
