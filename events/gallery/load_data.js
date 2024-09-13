@@ -33,7 +33,7 @@ function loadEvent() {
 
             iframe.width = "70%";
             iframe.height = "425px";
-            iframe.src = yt_link;
+            iframe.src = yt_link + "?controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1";
             iframe.frameBorder = '0';
             iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
             iframe.referrerpolicy = 'strict-origin-when-cross-origin';
