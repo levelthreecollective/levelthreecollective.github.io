@@ -7,8 +7,6 @@ function loadEvent() {
 
     const gallery = document.querySelector('.gallery');
 
-
-    
     if (event.link) {
         const link = document.createElement('a');
         link.href = event.link;
@@ -28,19 +26,31 @@ function loadEvent() {
     gallery.appendChild(pg);
 
     if (event.yt_links && event.yt_links.length > 0) {
+        // Create a container for horizontal scrolling
+        const videoContainer = document.createElement('div');
+        videoContainer.style.display = 'flex';
+        videoContainer.style.overflowX = 'auto';
+        videoContainer.style.gap = '20px'; // Optional: to add space between the videos
+        videoContainer.style.marginBottom = '20px';
+    
         event.yt_links.forEach(yt_link => {
             const iframe = document.createElement('iframe');
-
-            iframe.width = "70%";
-            iframe.height = "425px";
+    
+            if (window.innerWidth > 1000) {
+                iframe.style.width = '500px'; // Increase width for larger screens
+                iframe.style.height = '300px'; // Increase height for larger screens
+            }
             iframe.src = yt_link + "?controls=0&modestbranding=1&rel=0&showinfo=0&autohide=1";
             iframe.frameBorder = '0';
             iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
             iframe.referrerpolicy = 'strict-origin-when-cross-origin';
             iframe.allowFullscreen = true;
-
-            gallery.appendChild(iframe);
+            iframe.style.borderRadius = '5px';
+    
+            videoContainer.appendChild(iframe);
         });
+    
+        gallery.appendChild(videoContainer); // Add the scrolling container to the gallery
     }
 
     if (event.archive == true) {
