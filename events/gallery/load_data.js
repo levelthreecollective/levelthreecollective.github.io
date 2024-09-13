@@ -32,7 +32,7 @@ function loadEvent() {
             const iframe = document.createElement('iframe');
 
             iframe.width = "70%";
-            iframe.height = "315px";
+            iframe.height = "425px";
             iframe.src = yt_link;
             iframe.frameBorder = '0';
             iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
