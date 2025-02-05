@@ -6,7 +6,7 @@ export const eventData = {
         title: "Level III at SAA Carpark",
         location: "154 Scott - Brooklyn, NY",
         date: "22nd Feb 2025",
-        flyerSrc: "flyers/carpark.jpeg",
+        flyerSrc: "flyers/CARPARK.mp4",
         caption: "Join us for this event..."
     },
      "silo": {
