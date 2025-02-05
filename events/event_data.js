@@ -7,7 +7,7 @@ export const eventData = {
         location: "154 Scott - Brooklyn, NY",
         date: "22nd Feb 2025",
         flyerSrc: "flyers/carpark.jpeg",
-        caption: "Join us for this event...",
+        caption: "Join us for this event..."
     },
      "silo": {
         id: "silo",
