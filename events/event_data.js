@@ -8,8 +8,6 @@ export const eventData = {
         date: "22nd Feb 2025",
         flyerSrc: "flyers/carpark.jpeg",
         caption: "Join us for this event...",
-        images: [
-        
     },
      "silo": {
         id: "silo",
