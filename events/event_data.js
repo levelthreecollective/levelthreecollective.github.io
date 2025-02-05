@@ -150,21 +150,21 @@ export const eventData = {
         ]
     },
    // "convocation": {
-     //   id: "convocation",
-       // archive: true,
-    //    title: "Level III Presents: CONVOCATION",
-    //    location: "Kind Regards - New York, NY",
-    //    date: "16th June 2023",
-    //    flyerSrc: "flyers/kind_regards.jpeg",
-     //   caption: "Join us for this event...",
-     //   images: [
-       //     "convocation/1.jpg",
-         //   "convocation/2.jpg",
-          //  "convocation/3.jpg",
-          //  "convocation/4.jpg",
-          //  "convocation/5.jpg",
-          //  "convocation/6.jpg",
-          //  "convocation/7.jpg",
-        ]
+   //     id: "convocation",
+   //     archive: true,
+   //     title: "Level III Presents: CONVOCATION",
+   //     location: "Kind Regards - New York, NY",
+   //     date: "16th June 2023",
+   //     flyerSrc: "flyers/kind_regards.jpeg",
+   //     caption: "Join us for this event...",
+   //     images: [
+   //         "convocation/1.jpg",
+   //         "convocation/2.jpg",
+   //         "convocation/3.jpg",
+   //         "convocation/4.jpg",
+   //         "convocation/5.jpg",
+   //         "convocation/6.jpg",
+   //         "convocation/7.jpg",
+   //      ]
    // }
 };
