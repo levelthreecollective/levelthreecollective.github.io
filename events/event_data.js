@@ -166,5 +166,5 @@ export const eventData = {
           //  "convocation/6.jpg",
           //  "convocation/7.jpg",
         ]
-    }
+   // }
 };
