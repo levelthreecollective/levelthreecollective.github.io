@@ -1,7 +1,7 @@
 export const eventData = {
    "carpark": {
         id: "carpark",
-        archive: false,
+        archive: true,
         link: "https://ra.co/events/2096662",
         title: "Level III at SAA Carpark",
         location: "154 Scott - Brooklyn, NY",
