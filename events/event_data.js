@@ -5,6 +5,9 @@ export const eventData = {
         link: "https://ra.co/events/2096662",
         title: "Level III at SAA Carpark",
         location: "154 Scott - Brooklyn, NY",
+        yt_links: [
+            "https://www.youtube.com/embed/fdx4lvrkXlo?si=2pkaD48IRM4Dmo85",
+        ],
         date: "22nd Feb 2025",
         flyerSrc: "flyers/carpark.jpeg",
         caption: "Join us for this event..."
