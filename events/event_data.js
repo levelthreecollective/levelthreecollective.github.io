@@ -7,10 +7,10 @@ export const eventData = {
         location: "154 Scott - Brooklyn, NY",
         yt_links: [
             "https://www.youtube.com/embed/fdx4lvrkXlo?si=2pkaD48IRM4Dmo85",
+            "https://www.youtube.com/embed/3-HBLiFERis?si=CZiQazA6edIhuJ4C",
         ],
         date: "22nd Feb 2025",
         flyerSrc: "flyers/carpark.jpeg",
-        caption: "Join us for this event..."
     },
      "silo": {
         id: "silo",
