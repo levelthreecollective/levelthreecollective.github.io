@@ -1,4 +1,28 @@
 export const episodeData = {
+  "18": {
+        name: "EP18",
+        cover: "covers/18.jpg",
+        link: "https://www.youtube.com/watch?v=HO20NsCvdUo",
+        caption: "",
+    },          
+ "17": {
+        name: "EP17",
+        cover: "covers/17.jpg",
+        link: "https://www.youtube.com/watch?v=mhnACbZvXN4",
+        caption: "",
+    },                   
+"16": {
+        name: "EP16",
+        cover: "covers/16.jpg",
+        link: "https://youtu.be/oddMGUR_XVA?si=14hNmTXnw8a7aXAe",
+        caption: "",
+    },                 
+"15": {
+        name: "EP15",
+        cover: "covers/15.jpg",
+        link: "https://www.youtube.com/watch?v=NIxxjRYASWI",
+        caption: "",
+    },         
 "14": {
         name: "EP14",
         cover: "covers/14.jpg",
