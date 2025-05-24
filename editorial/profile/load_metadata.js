@@ -8,6 +8,13 @@ const data = editorialData[profileId];
 if (data) {
   const metaText = `${data.display_name}: ${data.caption}`;
 
+  // Set <title>
+  let titleTag = document.querySelector('title');
+  if (!titleTag) {
+    titleTag = document.createElement('title');
+    document.head.appendChild(titleTag);
+  }
+  titleTag.textContent = metaText;
   document.title = metaText;
 
   // Set <meta name="description">
