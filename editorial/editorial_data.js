@@ -20,7 +20,7 @@ export const editorialData = {
         caption: "We caught up with Zano ahead of our Elsewhere show back in April to discuss how she holds Johannesburg close while keeping her life culturally rich and creative in NYC. Click the poster to listen to her set.",
         interviewer: "Antony Ramirez",
         photographer: "Antony Ramirez",
-        date: "MAY 24, 2024",
+        date: "MAY 29, 2024",
         link: "https://soundcloud.com/levelthreeradio/zano-elsewhere-5-4",
         content: "zano/interview.txt"
     },
