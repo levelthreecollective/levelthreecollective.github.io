@@ -21,4 +21,10 @@ if (data) {
   if (ogTitleTag) {
     ogTitleTag.setAttribute('content', metaText);
   }
+
+  // Set <meta property="og:description">
+  const ogDescTag = document.querySelector('meta[property="og:description"]');
+  if (ogDescTag) {
+    ogDescTag.setAttribute('content', metaText);
+  }
 }
