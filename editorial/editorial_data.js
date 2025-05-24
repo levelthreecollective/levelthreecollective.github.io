@@ -2,14 +2,14 @@ export const editorialData = {
     "luis" : {
         id: "luis",
         display_name: "Luis",
-        cover: "profile/luis/luis1.jpeg",
+        cover: "profile/luis/asset_2.PNG",
         title: "Level III Presents: LUIS",
-        caption: "",
-        interviewer: "",
-        photographer: "",
+        caption: "Bringing Beats and Community to SF",
+        interviewer: "Chimenum Tasie-Amadi",
+        photographer: "Antony Ramirez",
         date: "MAY 24, 2025",
         link: "",
-        content: "zano/interview.txt"
+        content: "luis/interview.txt"
     },
 
     "zano" : {
