@@ -1,7 +1,7 @@
 export const editorialData = {
     "luis" : {
         id: "luis",
-        display_name: "Luis",
+        display_name: "Luis Castillo",
         cover: "profile/luis/asset_2.PNG",
         title: "Level III Presents: LUIS",
         caption: "Bringing Beats and Community to SF",
