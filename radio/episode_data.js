@@ -1,4 +1,16 @@
 export const episodeData = {
+  "21": {
+        name: "EPOAK3",
+        cover: "covers/OAK3.jpg",
+        link: "https://www.youtube.com/watch?v=wCh7Yg__H6k",
+        caption: "",
+    },           
+  "20": {
+        name: "EPOAK2",
+        cover: "covers/OAK2.jpg",
+        link: "https://www.youtube.com/watch?v=eapdp2NYu2M&t=17s",
+        caption: "",
+    },           
   "19": {
         name: "EPOAK1",
         cover: "covers/OAK1.jpg",
